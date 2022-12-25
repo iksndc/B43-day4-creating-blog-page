@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="css/myproject.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="assets/DumbWays logo.png" alt="" /></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myproject.html"><b>My Project</b></a></li>
+            <li style="width: 60%; justify-content: flex-end;"></li>
+            <a href="contact.html">
+                <button class="btn-contactme">Contact Me</button>
+            </a>
+            </div>
+    </nav>
+    <div style="display: flex; flex-direction: column;">
+        <h1 style="text-align: center;
+            font-size: 35pt; margin-bottom: 0; margin-top: 80px;">ADD MY PROJECT</h1>
+        <div
+            style=" display: flex; flex-direction: row; justify-content: center; margin-top: 0px; width: 100%; margin-bottom: 80px;">
+            <form class="set-form" onsubmit="addData(event)">
+                <div>
+                    <label for="input-blog-title">
+                        <h2 class="set-label">Project Name</h2>
+                    </label>
+                    <input id="input-blog-title" type="text" class="text-input" />
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: row;">
+                        <div>
+                            <label for="input-blog-start-date">
+                                <h2 class="set-label">Start Date</h2>
+                            </label>
+                            <input id="input-blog-start-date" type="date" class="text-input-date" />
+                        </div>
+                        <div style="margin-left: 60px;">
+                            <label for="input-blog-end-date">
+                                <h2 class=" set-label">End Date</h2>
+                            </label>
+                            <input id="input-blog-end-date" type="date" class="text-input-date" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="input-blog-description">
+                        <h2 class="set-label">Description</h2>
+                    </label>
+                    <textarea id="input-blog-description" class="message-input"></textarea>
+                </div>
+                <div>
+                    <label>
+                        <h2 for="" class=" set-label">Technologies</h2>
+                    </label>
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap;flex-basis: 50%; color: gray;">
+                        <div style="width: 400px;">
+                            <label class="text-input-checkbox">
+                                <input type="checkbox">Node Js
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div style="width: 400px;">
+                            <label class="text-input-checkbox">
+                                <input type="checkbox">Next Js
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div style="width: 400px;">
+                            <label class="text-input-checkbox">
+                                <input type="checkbox">React Js
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div style="width: 400px;">
+                            <label class="text-input-checkbox">
+                                <input type="checkbox">TypeSript
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <label>
+                        <h2 class="set-label">Upload Image</h2>
+                    </label>
+                    <div class="file-input">
+                        <label for="input-blog-image" style="display: flex;
+                    align-items: center;
+                    justify-content: space-between; font-size: x-large;">
+                            <p>CHOOSE</p>
+                            <img src="assets/Attachment.png" alt="attachment" />
+                        </label>
+                        <input type="file" id="input-blog-image" hidden />
+                    </div>
+                    <div style="display: flex; justify-content: flex-end; width: 100%">
+                        <button class="btn-submit">
+                            Submit
+                        </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="background-color: white;">
+        <h1 style="text-align: center;
+        font-size: 35pt; margin-bottom: 0; margin-top: 150px;">MY PROJECT</h1>
+        <div id="contents" class="blog-list">
+            <!-- dynamic content it's here! -->
+        </div>
+    </div>
+
+
+
+    <script src="js/myproject.js"></script>
+</body>
+
+</html>
